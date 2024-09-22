@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,13 +40,22 @@
 
 
 </head>
-<body class="font-lexendFont bg-bodyBG">
+<body class="font-lexendFont bg-bodyBG relative">
 
     <!-- Sticky Navbar Challange -->
-     <header class="w-full relative py-8">
-        <nav class="w-4/5 mx-auto flex justify-between items-center sticky top-0">
+     <header class="w-full sticky top-0 py-8 backdrop-blur-lg">
+
+      <div class="flex items-center justify-center gap-4 mb-4 sm:hidden">
+
+        <img src="./assets/logo.png" alt="">
+        <a href="./index.html" class="font-semibold text-2xl">Donate Bangladesh</a>
+
+      </div>
+
+        <nav class="w-11/12 md:w-4/5 mx-auto flex justify-between items-center ">
+
             <a href="./blog.html" class="font-semibold text-xl bg-btnBG px-8 py-3 rounded-lg hover:bg-primary hover:text-btnBG ">Blog</a>
-            <div class="flex items-center justify-center gap-4">
+            <div class="hidden sm:flex items-center justify-center gap-4">
 
                 <img src="./assets/logo.png" alt="">
                 <a href="./index.html" class="font-semibold text-2xl">Donate Bangladesh</a>
@@ -55,12 +64,60 @@
             
             <h1 class="flex gap-2 justify-center items-center font-medium text-xl text-secondary">
                 <img src="./assets/coin.png" alt="">
-                <span id="mainBalanace" ">5500</span>
+                <span id="mainBalanace">5500</span>
                 BDT
             </h1>
         </nav>
      </header>
     
+     <!-- main button section -->
+      <main class="w-full bg-white py-4">
+          <div class="w-11/12 md:w-4/5 mx-auto flex gap-4 justify-center items-center">
+            <button class="font-semibold text-xl text-primary bg-btnBG rounded-xl px-7 py-4 hover:bg-primary hover:text-btnBG">Donation</button>
+            <button class="font-medium text-xl text-secondary bg-white border-2 rounded-xl px-7 py-4 hover:bg-primary hover:text-btnBG">History</button>
+          </div>
+      </main>
+
+      <!-- Donation Section -->
+       <section id="donationSection" class="bg-white w-full py-3">
+
+          <div class="mx-auto w-11/12 md:w-4/5">
+                <!-- section 1 -->
+                <div class="flex gap-4 flex-col md:flex-row">
+
+                    <!-- image -->
+                      <div class="w-full">
+                      <img src="./assets/noakhali.png" alt="" class="w-full h-full object-fill">
+                      </div>
+
+                  <!-- right side -->
+                    <div class="w-full flex flex-col justify-between gap-4">
+                          <!--ALREADY DONATE  -->
+                          <h1 class="w-fit px-3 py-2 rounded-lg border-2 flex gap-2 justify-center items-center font-medium text-xl text-secondary  bg-bodyBG">
+                          <img src="./assets/coin.png" alt="">
+                          <span id="areadyDonateBalance" >0</span>
+                          BDT
+                          </h1>
+
+                          <!-- Title -->
+                          <h1 class="text-xl font-bold text-primary">Donate for Flood at Noakhali, Bangladesh</h1>
+                          <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+
+                          <!-- input -->
+                          <input type="text" name="donationAmount" placeholder="Write Donation Amount" id="donationAmount" class="w-full bg-white rounded-lg py-4 px-2 text-xl border-2 outline-none focus:outline-btnBG focus:border-transparent">
+
+                          <!-- Button -->
+                          <button id="donateNowBtn" class="w-full font-semibold text-xl text-primary bg-btnBG rounded-xl px-7 py-4 hover:bg-primary hover:text-btnBG">Donate Now</button>
+
+                      </div>
+                </div>
+
+
+
+          </div>
+
+
+       </section>
     
 </body>
 </html>
