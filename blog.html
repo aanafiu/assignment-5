@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +17,9 @@
      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
      <script src="https://cdn.tailwindcss.com"></script>
 
+           <!-- CSS link -->
+           <link rel="stylesheet" href="./style/style.css">
+
      <!-- custom tailwind -->
      <script>
         tailwind.config = {
@@ -30,7 +33,7 @@
                 secondary : "rgba(17, 17, 17, 0.7)" ,
                 btnBG : "#B4F461",
                 bodyBG : "#F9F7F3",
-              }
+              },
             }
           }
         }
@@ -38,15 +41,23 @@
 
 
 
-
 </head>
-<body class="font-lexendFont bg-bodyBG">
+<body class="font-lexendFont bg-bodyBG relative overflow-scroll">
 
     <!-- Sticky Navbar Challange -->
-     <header class="w-full relative py-8">
-        <nav class="w-4/5 mx-auto flex justify-between items-center sticky top-0">
+     <header class="w-full sticky top-0 py-8 backdrop-blur-lg">
+
+      <div class="flex items-center justify-center gap-4 mb-4 sm:hidden">
+
+        <img src="./assets/logo.png" alt="">
+        <a href="./index.html" class="font-semibold text-2xl">Donate Bangladesh</a>
+
+      </div>
+
+        <nav class="w-11/12 md:w-4/5 mx-auto flex justify-between items-center ">
+
             <a href="./blog.html" class="font-semibold text-xl bg-btnBG px-8 py-3 rounded-lg hover:bg-primary hover:text-btnBG ">Blog</a>
-            <div class="flex items-center justify-center gap-4">
+            <div class="hidden sm:flex items-center justify-center gap-4">
 
                 <img src="./assets/logo.png" alt="">
                 <a href="./index.html" class="font-semibold text-2xl">Donate Bangladesh</a>
@@ -55,7 +66,7 @@
             
             <h1 class="flex gap-2 justify-center items-center font-medium text-xl text-secondary">
                 <img src="./assets/coin.png" alt="">
-                <span id="mainBalanace" ">5500</span>
+                <span id="mainBalance">100000</span>
                 BDT
             </h1>
         </nav>
