@@ -83,11 +83,11 @@
       <!-- Donation Section -->
        <section id="donationSection" class="bg-white w-full py-7 pb-10">
 
-          <div class="flex flex-col gap-8 mx-auto w-11/12 md:w-4/5">
+          <div class="flex flex-col gap-8  mx-auto w-11/12 md:w-4/5">
             
                 <!-- section 1 -->
               
-                <div class="flex gap-4 flex-col md:flex-row">
+                <div class="flex gap-4 flex-col rounded-xl p-5 border-2 shadow-xl md:flex-row">
 
                     <!-- image -->
                       <div class="w-full">
@@ -118,7 +118,7 @@
 
 
                 <!-- section 2 -->
-                <div class="flex gap-4 flex-col md:flex-row">
+                <div class="flex gap-4 flex-col rounded-xl p-5 border-2 shadow-xl md:flex-row">
 
                     <!-- image -->
                       <div class="w-full">
@@ -148,7 +148,7 @@
                 </div>
 
                 <!-- section 3 -->
-                <div class="flex gap-4 flex-col md:flex-row">
+                <div class="flex gap-4 flex-col rounded-xl p-5 border-2 shadow-xl md:flex-row">
 
                     <!-- image -->
                       <div class="w-full">
@@ -203,30 +203,34 @@
 
 
        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-        <div class="modal-box">
-          <h3 class="text-lg font-bold">Hello! there</h3>
-          <p class="py-4">Press ESC key or click the button below to close</p>
+        <div class="modal-box flex flex-col justify-center items-center gap-4">
+          <h1 class="text-3xl font-extrabold text-primary">Congrates!</h1>
+          <img src="./assets/coin.png" alt="">
+          <p class="py-4 text-secondary">You Have Donate For Humankind</p>
+          <h1 class="font-bold text-xl text-primary">Successfully</h1>
           <div class="modal-action">
             <form method="dialog">
               <!-- if there is a button in form, it will close the modal -->
-              <button class="btn">Close</button>
+              <button class="btn text-lg hover:bg-secondary hover:text-btnBG bg-btnBG text-primary">Close Confrimation</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+      <!-- warning  -->
+       <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box flex flex-col justify-center items-center gap-4">
+          <h1 class="text-3xl font-extrabold text-primary">Warning!!!</h1>
+          <img src="./assets/images.png" alt="">
+          <h1 class="font-bold text-xl text-primary">Give Appropriate Amount</h1>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn text-lg hover:bg-secondary hover:text-btnBG bg-btnBG text-primary">Close Confrimation</button>
             </form>
           </div>
         </div>
       </dialog>
 
-       <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
-        <div class="modal-box">
-          <h3 class="text-lg font-bold">Hello i am warning!</h3>
-          <p class="py-4">Press ESC key or click the button below to close</p>
-          <div class="modal-action">
-            <form method="dialog">
-              <!-- if there is a button in form, it will close the modal -->
-              <button class="btn">Close</button>
-            </form>
-          </div>
-        </div>
-      </dialog>
 
 
 
