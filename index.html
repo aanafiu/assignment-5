@@ -17,6 +17,9 @@
      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
      <script src="https://cdn.tailwindcss.com"></script>
 
+           <!-- CSS link -->
+           <link rel="stylesheet" href="./style/style.css">
+
      <!-- custom tailwind -->
      <script>
         tailwind.config = {
@@ -30,12 +33,11 @@
                 secondary : "rgba(17, 17, 17, 0.7)" ,
                 btnBG : "#B4F461",
                 bodyBG : "#F9F7F3",
-              }
+              },
             }
           }
         }
       </script>
-
 
 
 
@@ -64,7 +66,7 @@
             
             <h1 class="flex gap-2 justify-center items-center font-medium text-xl text-secondary">
                 <img src="./assets/coin.png" alt="">
-                <span id="mainBalanace">5500</span>
+                <span id="mainBalance">100000</span>
                 BDT
             </h1>
         </nav>
@@ -73,8 +75,8 @@
      <!-- main button section -->
       <main class="w-full bg-white py-4">
           <div class="w-11/12 md:w-4/5 mx-auto flex gap-4 justify-center items-center">
-            <button class="font-semibold text-xl text-primary bg-btnBG rounded-xl px-7 py-4 hover:bg-primary hover:text-btnBG">Donation</button>
-            <button class="font-medium text-xl text-secondary bg-white border-2 rounded-xl px-7 py-4 hover:bg-primary hover:text-btnBG">History</button>
+            <button id="donationBtn" class="font-semibold text-xl text-primary bg-btnBG rounded-xl px-7 py-4 hover:bg-primary hover:text-btnBG">Donation</button>
+            <button id="historyBtn" class="font-medium text-xl text-secondary bg-white border-2 rounded-xl px-7 py-4 hover:bg-primary hover:text-btnBG">History</button>
           </div>
       </main>
 
@@ -83,7 +85,7 @@
 
           <div class="mx-auto w-11/12 md:w-4/5">
                 <!-- section 1 -->
-                <div class="flex gap-4 flex-col md:flex-row">
+                <div id="section1" class="flex gap-4 flex-col md:flex-row">
 
                     <!-- image -->
                       <div class="w-full">
@@ -95,7 +97,7 @@
                           <!--ALREADY DONATE  -->
                           <h1 class="w-fit px-3 py-2 rounded-lg border-2 flex gap-2 justify-center items-center font-medium text-xl text-secondary  bg-bodyBG">
                           <img src="./assets/coin.png" alt="">
-                          <span id="areadyDonateBalance" >0</span>
+                          <span id="alreadyDonateBalance" >0</span>
                           BDT
                           </h1>
 
@@ -118,6 +120,56 @@
 
 
        </section>
+
+       <!-- history -->
+       <section id="historySection" class="hidden bg-white w-full py-3">
+
+          <div id="historyList" class="mx-auto w-11/12 md:w-4/5">
+            
+<!-- Demo
+            <div class="border-2 rounded-lg bg-white p-4 flex flex-col gap-2">
+              <h1 class="text-primary font-bold text-xl">96500 Taka is Donated for Flood Relief in Feni, Bangladesh </h1>
+              <p class="text-base text-secondary">Date: </p>
+            </div> -->
+
+
+
+          </div>
+
+       </section>
+
+
+       <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <h3 class="text-lg font-bold">Hello! there</h3>
+          <p class="py-4">Press ESC key or click the button below to close</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+
+       <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <h3 class="text-lg font-bold">Hello i am warning!</h3>
+          <p class="py-4">Press ESC key or click the button below to close</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+
+
+
+       <!-- js link -->
+        <script src="./js/commonFunction.js"></script>
+        <script src="./js/indexfile.js"></script>
     
 </body>
 </html>
