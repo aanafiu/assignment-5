@@ -36,7 +36,7 @@ document.getElementById('donateNowBtn1').addEventListener('click', function(even
 
 
     // Updating mainBalance
-    if (!isNaN(donationAmount) && parseFloat(donationAmount) < mainBalance && donationAmount !== "") {
+    if (!isNaN(donationAmount) && parseFloat(donationAmount) < mainBalance && donationAmount !== "" && parseFloat(donationAmount) > 0) {
 
         mainBalanceElement.innerText = (mainBalance - parseFloat(donationAmount));
 
@@ -48,6 +48,8 @@ document.getElementById('donateNowBtn1').addEventListener('click', function(even
          my_modal_5.showModal();
 
          const titleText = this.previousElementSibling.previousElementSibling.previousElementSibling.innerText;
+
+         
         historyAdd(titleText, donationAmount )
 
 
@@ -70,7 +72,7 @@ document.getElementById('donateNowBtn2').addEventListener('click', function(even
 
 
     // Updating mainBalance btn 2
-    if (!isNaN(donationAmount) && parseFloat(donationAmount) < mainBalance && donationAmount !== "") {
+    if (!isNaN(donationAmount) && parseFloat(donationAmount) < mainBalance && donationAmount !== "" && parseFloat(donationAmount) > 0) {
 
         mainBalanceElement.innerText = (mainBalance - parseFloat(donationAmount));
 
@@ -82,6 +84,8 @@ document.getElementById('donateNowBtn2').addEventListener('click', function(even
          my_modal_5.showModal();
 
          const titleText = this.previousElementSibling.previousElementSibling.previousElementSibling.innerText;
+
+
         historyAdd(titleText, donationAmount )
 
 
@@ -105,7 +109,7 @@ document.getElementById('donateNowBtn3').addEventListener('click', function(even
 
 
     // Updating mainBalance btn 3
-    if (!isNaN(donationAmount) && parseFloat(donationAmount) < mainBalance && donationAmount !== "") {
+    if (!isNaN(donationAmount) && parseFloat(donationAmount) < mainBalance && donationAmount !== "" && parseFloat(donationAmount) > 0) {
 
         mainBalanceElement.innerText = (mainBalance - parseFloat(donationAmount));
 
@@ -117,6 +121,8 @@ document.getElementById('donateNowBtn3').addEventListener('click', function(even
          my_modal_5.showModal();
 
          const titleText = this.previousElementSibling.previousElementSibling.previousElementSibling.innerText;
+
+
         historyAdd(titleText, donationAmount )
 
 
