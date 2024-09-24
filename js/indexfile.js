@@ -57,6 +57,8 @@ document.getElementById('donateNowBtn1').addEventListener('click', function(even
 
         my_modal_6.showModal();
     }
+
+    document.getElementById("donationAmount1").value = '';
 });
 
 
@@ -93,6 +95,8 @@ document.getElementById('donateNowBtn2').addEventListener('click', function(even
 
         my_modal_6.showModal();
     }
+
+    document.getElementById("donationAmount2").value = '';
 });
 
 
@@ -130,4 +134,6 @@ document.getElementById('donateNowBtn3').addEventListener('click', function(even
 
         my_modal_6.showModal();
     }
+
+    document.getElementById("donationAmount3").value = '';
 });
